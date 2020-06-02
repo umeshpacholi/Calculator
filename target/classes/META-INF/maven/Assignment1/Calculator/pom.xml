@@ -1,0 +1,52 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>Assignment1</groupId>
+	<artifactId>Calculator</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+
+
+	<properties>
+		<maven.compiler.source>10</maven.compiler.source>
+		<maven.compiler.target>10</maven.compiler.target>
+		<jackson.version>2.9.7</jackson.version>
+		<stack.version>3.9.0</stack.version>
+		<vertx.version>3.9.0</vertx.version>
+    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    	<main.verticle>Assignment1.Calculator.Connector</main.verticle>
+	</properties>
+
+	<dependencies>
+		<dependency>
+		    <groupId>io.vertx</groupId>
+		    <artifactId>vertx-web</artifactId>
+		    <version>${stack.version}</version>
+		</dependency>
+		<dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.8.1</version>
+		</dependency>
+		<dependency>
+		    <groupId>com.rabbitmq</groupId>
+		    <artifactId>amqp-client</artifactId>
+		    <version>5.6.0</version>
+		</dependency>
+		<dependency>
+		    <groupId>io.vertx</groupId>
+		    <artifactId>vertx-core</artifactId>
+		    <version>${stack.version}</version>
+		</dependency>
+
+	</dependencies>
+	
+	<build>
+ 
+    <pluginManagement>
+      <plugins>
+      </plugins>
+    </pluginManagement>
+
+  </build>
+</project>
